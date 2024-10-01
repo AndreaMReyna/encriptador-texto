@@ -1,75 +1,101 @@
-/* styles.css */
+/* ------------------------------
+   Fuentes Externas
+------------------------------ */
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&family=Edu+TAS+Beginner:wght@400..700&family=Metal&family=Nanum+Pen+Script&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Protest+Riot&display=swap');
 
+/* ------------------------------
+   Estilos Generales
+------------------------------ */
 body {
     margin: 0;
     padding: 0;
-    background-image: url(img/imagen\ de\ fondo.jpg);
-    background-size:cover;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 100vh;
+    background-image: url(img/imagen\ de\ fondo.jpg); /* Fondo de pantalla */
+    background-size: cover; /* Ajusta el fondo al tamaño de la pantalla */
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: left; /* Alinear a la izquierda */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
 }
 
+/* ------------------------------
+   Contenedor Principal
+------------------------------ */
 .container {
-    background:rgb(255,255, 255, 0.3);
-    margin: 20px;
-    padding: 0px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
+    background: rgba(255, 255, 255, 0.3); /* Fondo semi-transparente */
+    margin: 20px; /* Margen externo */
+    padding: 0; /* Sin padding interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 600px; /* Ancho máximo */
+    width: 100%; /* Ancho total */
 }
 
+/* ------------------------------
+   Encabezados
+------------------------------ */
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-family: "Chakra Petch", sans-serif;
+    text-align: center; /* Centrar texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-family: "Chakra Petch", sans-serif; /* Fuente específica */
 }
 
+/* ------------------------------
+   Contenedores de Entrada y Resultado
+------------------------------ */
 .input-container,
 .result-container {
-   padding: 18px;
-    margin-bottom: 20px;
+    padding: 18px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio debajo */
 }
 
+/* ------------------------------
+   Área de Texto
+------------------------------ */
 textarea {
-    width: 500px;
-    height: 100px;
-    margin-bottom: 10px;
-    padding: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: none;
-    font-size: 16px;
+    width: 90%; /* Ancho completo del contenedor */
+    height: 100px; /* Altura fija */
+    margin-bottom: 10px; /* Espacio debajo */
+    padding: 18px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    resize: none; /* Deshabilitar redimensionamiento */
+    font-size: 16px; /* Tamaño de fuente */
 }
 
+/* ------------------------------
+   Botones
+------------------------------ */
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    padding: 18px;
+    display: flex; /* Flexbox para disposición */
+    justify-content: space-between; /* Espacio entre botones */
+    padding: 18px; /* Espaciado interno */
 }
 
-.alert{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: small;   
-    color:black;
+/* ------------------------------
+   Alertas
+------------------------------ */
+.alert {
+    display: flex; /* Flexbox para alinear elementos */
+    align-items: center; /* Centrar verticalmente */
+    gap: 5px; /* Espacio entre elementos */
+    font-family: 'Times New Roman', Times, serif; /* Fuente para alertas */
+    font-size: small; /* Tamaño de fuente pequeño */
+    color: black; /* Color de texto */
 }
 
+/* ------------------------------
+   Estilo de Botones
+------------------------------ */
 button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: black;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: black; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    cursor: pointer; /* Cambiar cursor al pasar */
+    font-size: 16px; /* Tamaño de fuente */
 }
 
 button:hover {
-    background-color: #717171;
+    background-color: #717171; /* Color al pasar el ratón */
 }
